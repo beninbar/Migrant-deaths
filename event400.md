@@ -1,0 +1,3 @@
+#### Event 400
+
+Event 400 appears on the map in Paris, France. Although not in the Mediterranean Sea, this event still describes a drowning death: in the Seine River. Notably, the death is classified as dead AND missing, instead of just dead OR missing. Presumably, this means the body was never recovered from the river. However, the source link is missing. Further sleuthing through Parisen news would be needed.

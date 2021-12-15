@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mapping migrant deaths</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="crossorigin=""/>
+    <link rel="stylesheet" href="migrantdeaths.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Migrant drownings in and around the Mediterranean, 2000-2015</h3>
+      <div class="row">
+        <div class="col-md-3" id="content"></div>
+        <div class="col-md-9" id="places-sidebar">
+          <div id="migrantdeaths" class="map"></div>
+            <nav id="nav-tabs" class="nav nav-pills mt-3" role="tablist">
+              <a class="nav-link" href="#event44" data-toggle="tab" role="tab">Event 44: Libya/Greece</a>
+              <a class="nav-link" href="#event400" data-toggle="tab" role="tab">Event 400: Paris</a>
+              <a class="nav-link" href="#event1014" data-toggle="tab" role="tab">Event 1014: UK</a>
+              <a class="nav-link" href="#event124" data-toggle="tab" role="tab">Event 124: Aylan Kurdi</a>
+              <a class="nav-link" href="#migratoryroutes" data-toggle="tab" role="tab">Migratory routes</a>
+            </nav>
+            <div class="tab-content p-3">
+              <section class="tab-pane fade show active" id="event44" role="tabpanel"></section>
+              <section class="tab-pane fade" id="event400" role="tabpanel"></section>
+              <section class="tab-pane fade" id="event1014" role="tabpanel"></section>
+              <section class="tab-pane fade" id="event124" role="tabpanel"></section>
+              <section class="tab-pane fade" id="migratoryroutes" role="tabpanel"></section>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+
+    <!---Markdown--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.0/markdown-it.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-footnote/3.0.1/markdown-it-footnote.js"></script>
+
+    <!---Polyline decorator--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-polylinedecorator/1.1.0/leaflet.polylineDecorator.min.js"></script>
+
+    <!---Snaking/animation of polylines-->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.polyline.snakeanim@0.2.0/L.Polyline.SnakeAnim.min.js"></script>
+
+    <script src="migrantdeaths.js"></script>
+  </body>
+</html>

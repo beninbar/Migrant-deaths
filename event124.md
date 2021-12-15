@@ -1,0 +1,5 @@
+#### Event 124
+
+Event 124 describes the death of 12 Syrian migrants, including Aylan Kurdi, a 3 year old boy whose body was found on a beach on the [Greek island of Kos](https://www.google.com/maps/place/Kos/@36.7937933,27.0664611,12z/data=!3m1!4b1!4m5!3m4!1s0x14bdfe67b6c08b35:0x9e9cc4f8469bdcdd!8m2!3d36.8915064!4d27.2877228). The image was highly circulated and acted as a geoplitical flashpoint that brought global attention to the crisis. 
+
+The location for this event appears alongside a quadrangle of points in northwestern Egypt. All of them are noted as deaths occurring near Kos, located at 36N, 27E. As with event 44, the longitude appears to be correct (27E), but the latitude of 21N is 15 degrees or roughly 1,035 miles south of Kos. The reason for this differential, as well as for the grouping of points in a quadrangle, is unlear. 

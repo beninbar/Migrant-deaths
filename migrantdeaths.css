@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans+Condensed:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans+Condensed:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans+Condensed:wght@300&family=Raleway:wght@200&family=Roboto:wght@100&display=swap');
+
+.map {
+    position: relative;
+    height: 600px;
+    width: 835px;
+}
+.leaflet-routing-container {
+    display: none;
+}
+html {
+    min-height: 100%;
+}
+body {
+    background: linear-gradient(#0A1416, 70%, #D5E8EB);
+    font-family: 'Raleway', sans-serif;
+
+}
+h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #D5E8EB;
+    padding: 10px;
+    font-weight: 600;
+}
+#content > h3 {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    color: #D5E8EB;
+    padding: 10px;
+    padding-left: 0;
+}
+#content {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    color: #D5E8EB;
+}
+.nav {
+    justify-content: space-evenly;
+}
+.nav-link {
+    background-color: #0A1416;
+    color: #D5E8EB;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+.nav-pills .nav-link.active {
+    background-color: #D5E8EB;
+    color: #0A1416;
+    font-weight: bold;
+}
+.h4, h4 {
+    font-weight: 750;
+}
+.tab-content {
+    font-weight: bold;
+}
+.tab-content > .tab-pane {
+    line-height: 1.2;
+}
+.leaflet-popup-content-wrapper {
+    background: linear-gradient(to top, #D5E8EB, white);
+    padding: 10px;
+}
+.leaflet-popup-content {
+    background: linear-gradient(to top, #D5E8EB, white);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin: 3px;
+}
+.leaflet-popup-tip {
+    background: #D5E8EB;
+}
