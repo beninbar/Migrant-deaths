@@ -29,7 +29,8 @@ tileLayer = L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/ligh
 */
 
 // Define the features array.
-let migrantfeatures;
+let migrantfeatures
+let markersarray = [];
 $.getJSON("migrant deaths drowned extract.geojson", function(data){
   // Define the Leaflet layer.
   let migrantlayer;
@@ -61,11 +62,13 @@ $.getJSON("migrant deaths drowned extract.geojson", function(data){
    if (x.source_url) {
     popup = "Event: " + x.Event + "<br>Year: " + x.Year + "<br>Dead: " + x.dead + "<br>Missing: " + x.missing + "<br>Dead AND missing: " + x.dead_and_missing + "<br>Location: " + x.location + "<br>Description: " + x.description + "<br>Source: " + x.source + "<br>URL: " + "<a href='" + x.source_url + "'>Link</a>";
     marker = L.circleMarker(x.latLng, {radius: 0.8, color: "red"}).bindPopup(popup);
+    markersarray.push(marker);
     marker.addTo(map);
     }
    else {
     popup = "Event: " + x.Event + "<br>Year: " + x.Year + "<br>Dead: " + x.dead + "<br>Missing: " + x.missing + "<br>Dead AND missing: " + x.dead_and_missing + "<br>Location: " + x.location + "<br>Description: " + x.description + "<br>Source: " + x.source;
     marker = L.circleMarker(x.latLng, {radius: 0.8, color: "red"}).bindPopup(popup);
+    markersarray.push(marker);
     marker.addTo(map);
     }
   });
@@ -135,9 +138,9 @@ $.ajax({
       number = tab.split(/([0-9]+)/);
       number = number[1];
       number-=1;
-      let tabevent = migrantfeatures[number];
-      map.flyTo(tabevent.latLng, 6);
-      marker.openPopup(tabevent.latLng);
+      let tabevent = markersarray[number];
+      map.flyTo(tabevent._latlng, 6);
+      tabevent.openPopup();
       }
     });
   }
